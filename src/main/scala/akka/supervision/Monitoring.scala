@@ -1,6 +1,6 @@
-package akka
+package akka.supervision
 
-import akka.actor.{ ActorRef, ActorSystem, Props, Actor, Terminated }
+import akka.actor.{Actor, ActorRef, ActorSystem, Props, Terminated}
 
 
 class Ares(athena: ActorRef) extends Actor {

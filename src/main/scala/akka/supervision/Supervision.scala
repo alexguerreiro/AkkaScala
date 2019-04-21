@@ -1,10 +1,10 @@
-package akka
+package akka.supervision
 
-import scala.language.postfixOps
-import scala.concurrent.duration._
-import akka.actor.OneForOneStrategy
 import akka.actor.SupervisorStrategy._
-import akka.actor.{ ActorRef, ActorSystem, Props, Actor }
+import akka.actor.{Actor, ActorRef, ActorSystem, OneForOneStrategy, Props}
+
+import scala.concurrent.duration._
+import scala.language.postfixOps
 
 class Aphrodite extends Actor {
   import Aphrodite._
